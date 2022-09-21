@@ -233,7 +233,7 @@ class Lutador
         echo 'Lutador: ' . $this->getNome() .PHP_EOL;
         echo 'Origem: ' . $this->getNacionalidade() .PHP_EOL;
         echo 'Altura: ' . $this->getAltura() .PHP_EOL;
-        echo 'Idade: ' . $this->getNome() .PHP_EOL;
+        echo 'Idade: ' . $this->getIdade() .PHP_EOL;
         echo 'Pesando: ' . $this->getPeso() .PHP_EOL;
         echo 'Ganhou: ' . $this->getVitorias() .PHP_EOL;
         echo 'Perdeu: ' . $this->getDerrotas() .PHP_EOL;

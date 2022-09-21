@@ -1,6 +1,7 @@
 <?php
 
 require_once 'Lutador.php';
+require_once 'Luta.php';
 
 $lutadores = array();
 
@@ -12,4 +13,11 @@ $lutadores[4] = new Lutador('UFC Cobol', 'Brasil', 37, 1.70, 119.3,5, 4, 3);
 $lutadores[5] = new Lutador('Nerdart', 'EUA', 30, 1.81, 105.7, 12, 2, 4);
 
 
-$lutadores[3]->status();
+//$lutadores[3]->status();
+
+
+$UEC = new Luta();
+$UEC->marcarLuta($lutadores[0], $lutadores[1]);
+$UEC->lutar();
+$lutadores[0]->status();
+$lutadores[1]->status();
